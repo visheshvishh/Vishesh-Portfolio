@@ -985,7 +985,7 @@ export default function Portfolio() {
               </p>
               <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                 {[
-                  { icon: <MapPin size={15} />, val: "Santacruz East, Mumbai" },
+                  { icon: <MapPin size={15} />, val: "Santacruz, Mumbai, India" },
                   { icon: <Mail size={15} />, val: "vishesh8828@gmail.com" },
                   { icon: <Phone size={15} />, val: "+91-8828060678" },
                 ].map(({ icon, val }) => (
