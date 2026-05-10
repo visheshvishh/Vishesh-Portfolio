@@ -647,7 +647,7 @@ const SKILLS = {
   "Backend": { color: "#10b981", bg: "rgba(16,185,129,0.08)", border: "rgba(16,185,129,0.25)", items: ["FastAPI", "REST APIs"] },
   "Databases": { color: "#8b5cf6", bg: "rgba(139,92,246,0.08)", border: "rgba(139,92,246,0.25)", items: ["MySQL", "MongoDB"] },
   "Tools": { color: "#f43f5e", bg: "rgba(244,63,94,0.08)", border: "rgba(244,63,94,0.25)", items: ["GitHub", "VS Code", "Vercel", "Google Colab"] },
-  "AI Tools": { color: "#06b6d4", bg: "rgba(6,182,212,0.08)", border: "rgba(6,182,212,0.25)", items: ["Claude Code", "ChatGPT", "Codex"] },
+  "AI Tools": { color: "#06b6d4", bg: "rgba(6,182,212,0.08)", border: "rgba(6,182,212,0.25)", items: ["Claude Code", "OpenAI Codex", "ChatGPT"] },
 };
 
 const PROJECTS = [
