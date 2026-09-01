@@ -1134,7 +1134,7 @@ export default function Portfolio() {
       {/* EDUCATION */}
       <Section id="education">
         <Container>
-          <div className="education-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "start" }}>
+          <div className="education-grid" style={{ display: "flex", flexDirection: "column", gap: 80 }}>
             <div>
               <div className="section-label">Academic Journey</div>
               <h2 className="font-display section-title" style={{ fontSize: "2.8rem", fontWeight: 800, letterSpacing: 0, marginBottom: 48 }}>
