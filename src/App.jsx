@@ -694,11 +694,7 @@ const EDUCATION = [
     degree: "Master of Computer Applications (MCA)",
     institution: "Thakur Institute of Management Studies, Career Development & Research",
     year: "April 2026",
-<<<<<<< HEAD
     grade: "CGPA: 8.04",
-=======
-    grade: "CGPA: 8.25",
->>>>>>> e182e711934bedab4c321bf2a6724886fd4b63f8
     color: "#00d4ff",
   },
   {
@@ -857,7 +853,7 @@ export default function Portfolio() {
               <Download size={14} /> Resume
             </a>
             <button className="btn-primary" style={{ padding: "8px 20px", fontSize: "0.8rem" }}
-              onClick={() => window.open("mailto:vishesh8828@gmail.com")}>
+              onClick={() => window.open("mailto:vishesh8828@gmail.com", "_self")}>
               Hire Me
             </button>
           </div>
@@ -944,21 +940,17 @@ export default function Portfolio() {
             >
               <Download size={16} /> Download Resume
             </a>
-            <button className="btn-outline" onClick={() => window.open("https://github.com/visheshvishh")}>
+            <button className="btn-outline" onClick={() => window.open("https://github.com/visheshvishh", "_blank", "noopener,noreferrer")}>
               <Github size={16} /> GitHub
             </button>
-            <button className="btn-outline" onClick={() => window.open("https://www.linkedin.com/in/visheshvishh/")}>
+            <button className="btn-outline" onClick={() => window.open("https://www.linkedin.com/in/visheshvishh/", "_blank", "noopener,noreferrer")}>
               <Linkedin size={16} /> LinkedIn
             </button>
           </div>
 
           {/* Stats */}
           <div className="stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16, maxWidth: 480, margin: "0 auto", animation: "fadeInUp 0.8s 0.8s both" }}>
-<<<<<<< HEAD
             {[["2+", "Projects Live"], ["4", "Certifications"], ["8.04", "MCA CGPA"]].map(([val, label]) => (
-=======
-            {[["2+", "Projects Live"], ["4", "Certifications"], ["8.25", "MCA CGPA"]].map(([val, label]) => (
->>>>>>> e182e711934bedab4c321bf2a6724886fd4b63f8
               <div key={label} className="stat-card">
                 <div className="font-display" style={{ fontSize: "2rem", fontWeight: 800, color: COLORS.accent }}>{val}</div>
                 <div style={{ fontSize: "0.75rem", color: COLORS.muted, marginTop: 4, letterSpacing: 0 }}>{label}</div>
@@ -1119,13 +1111,13 @@ export default function Portfolio() {
                   <div className="project-links" style={{ display: "flex", gap: 12 }}>
                     {proj.live && (
                       <button className="btn-primary" style={{ fontSize: "0.82rem", padding: "9px 18px", background: `linear-gradient(135deg, ${proj.color}, ${proj.color}99)` }}
-                        onClick={() => window.open(proj.live)}>
+                        onClick={() => window.open(proj.live, "_blank", "noopener,noreferrer")}>
                         <ExternalLink size={13} /> Live Demo
                       </button>
                     )}
                     {proj.github && (
                       <button className="btn-outline" style={{ fontSize: "0.82rem", padding: "8px 18px", color: proj.color, borderColor: `${proj.color}50` }}
-                        onClick={() => window.open(proj.github)}>
+                        onClick={() => window.open(proj.github, "_blank", "noopener,noreferrer")}>
                         <Github size={13} /> GitHub
                       </button>
                     )}
@@ -1218,7 +1210,7 @@ export default function Portfolio() {
             ].map(({ icon, label, val, link, color }) => (
               <div key={label}
                 className="contact-card"
-                onClick={link ? () => window.open(link) : undefined}
+                onClick={link ? () => window.open(link, "_blank", "noopener,noreferrer") : undefined}
                 style={{ borderRadius: 14, padding: "22px 24px", display: "flex", gap: 16, alignItems: "center", background: "rgba(17,24,39,0.8)", border: `1px solid ${COLORS.border}`, cursor: link ? "pointer" : "default", transition: "all 0.3s" }}
                 onMouseEnter={e => { if (link) { e.currentTarget.style.borderColor = color; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = `0 12px 40px ${color}18`; }}}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = COLORS.border; e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "none"; }}>
@@ -1251,7 +1243,7 @@ export default function Portfolio() {
               { icon: <Linkedin size={18} />, link: "https://www.linkedin.com/in/visheshvishh/" },
               { icon: <Mail size={18} />, link: "mailto:vishesh8828@gmail.com" },
             ].map(({ icon, link }, i) => (
-              <button key={i} onClick={() => window.open(link)}
+              <button key={i} onClick={() => window.open(link, "_blank", "noopener,noreferrer")}
                 style={{ width: 36, height: 36, borderRadius: 8, border: `1px solid ${COLORS.border}`, background: "transparent", color: COLORS.muted, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 0.3s" }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = COLORS.accent; e.currentTarget.style.color = COLORS.accent; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = COLORS.border; e.currentTarget.style.color = COLORS.muted; }}>
