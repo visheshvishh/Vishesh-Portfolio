@@ -694,7 +694,11 @@ const EDUCATION = [
     degree: "Master of Computer Applications (MCA)",
     institution: "Thakur Institute of Management Studies, Career Development & Research",
     year: "April 2026",
+<<<<<<< HEAD
     grade: "CGPA: 8.04",
+=======
+    grade: "CGPA: 8.25",
+>>>>>>> e182e711934bedab4c321bf2a6724886fd4b63f8
     color: "#00d4ff",
   },
   {
@@ -950,7 +954,11 @@ export default function Portfolio() {
 
           {/* Stats */}
           <div className="stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16, maxWidth: 480, margin: "0 auto", animation: "fadeInUp 0.8s 0.8s both" }}>
+<<<<<<< HEAD
             {[["2+", "Projects Live"], ["4", "Certifications"], ["8.04", "MCA CGPA"]].map(([val, label]) => (
+=======
+            {[["2+", "Projects Live"], ["4", "Certifications"], ["8.25", "MCA CGPA"]].map(([val, label]) => (
+>>>>>>> e182e711934bedab4c321bf2a6724886fd4b63f8
               <div key={label} className="stat-card">
                 <div className="font-display" style={{ fontSize: "2rem", fontWeight: 800, color: COLORS.accent }}>{val}</div>
                 <div style={{ fontSize: "0.75rem", color: COLORS.muted, marginTop: 4, letterSpacing: 0 }}>{label}</div>
